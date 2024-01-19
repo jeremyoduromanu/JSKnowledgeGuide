@@ -18,6 +18,8 @@
     <!-- Local Style Sheet -->
     <link rel="stylesheet" href="./src/css/qtcreator-dark.min.css">
     <link rel="stylesheet" type="text/css" href="./src/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- End of Links  -->
 </head>
 <!-- Main Section Begins -->
@@ -60,14 +62,25 @@
                         <i class="fa-solid fa-circle-info"></i>
                         <span class="nav-item">Conclusion</span>
                     </a></li>
+                    <div>
+                        <label for="checkbox" class="checkbox-label">Checkbox</label>
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                      <label for="checkbox" class="label">
+                        <i class="fas fa-moon"></i>
+                        <i class='fas fa-sun'></i>
+                        <div class='ball'></div>
+                      </label>
+                    
+                    
             </ul>
+            
         </div>
     </nav>
     <header>
-        <h1>JavaScript Essential Skills</h1>
+        <h1>JavaScript Essential Skills.</h1>
     </header>
     <main>
-        <section id="intorduction">
+        <section id="introduction">
             <div class="introduction topic">
                 <h2>I. Introduction</h2>
             </div>
@@ -192,7 +205,7 @@
                 <div class="function-declaration subtopic">
                     <h3>Function Declarations</h3>
                 </div>
-                <div class="subtopic-text">
+                <div class= "sub-of-sub-text">
                     <p>
                         Function declarations are named functions that can be called anywhere in the code, even before
                         they
@@ -257,6 +270,26 @@ console.log(doubleNumber(5)); // Output: 10
                         also return values, which are values that are returned to the calling code when the function is
                         complete.
                     </p>
+                    <div class="code-container">
+                        <pre><code>
+function sum(a, b) {
+return a + b;
+                        }
+                        
+// Call the function with arguments 2 and 3
+let result = sum(2, 3);
+                        
+// Output the result to the console
+console.log(result); // Output: 5
+                        </code></pre>
+                        <p>
+                            In this example, the sum function takes two parameters (a and b) and returns their sum using
+                            the return statement. We
+                            then call the function with arguments 2 and 3, and store the result in the result variable.
+                            Finally, we output the
+                            result to the console using console.log.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="topic-details">
@@ -276,6 +309,34 @@ console.log(doubleNumber(5)); // Output: 10
                         constructor
                         function.
                     </p>
+                    <div class="sub-of-subtopic subtopic2">
+<h4>Object Literal Notation</h4>
+                </div>
+                <div class="code-container">
+<pre><code>
+// Creating an object using object literal notation
+const person = {
+firstName: 'John',
+lastName: 'Doe',
+age: 30,
+hobbies: ['reading', 'hiking'],
+address: {
+street: '123 Main St',
+city: 'Anytown',
+state: 'CA',
+zipCode: '12345'
+}
+};
+
+// Accessing object properties
+console.log(person.firstName); // Output: John
+console.log(person.hobbies[0]); // Output: reading
+console.log(person.address.city); // Output: Anytown
+
+</code></pre>
+<p>In JavaScript, an object is a collection of key-value pairs that represents a real-world object, such as a person, a
+car, or a bank account. You can create an object using object literal notation, which is a way to define an object in
+JavaScript using braces {}.</p>
                 </div>
                 <div class="sub-of-subtopic subtopic2">
                     <h4>2. Accessing and manipulating object properties</h4>
@@ -394,20 +455,68 @@ console.log(doubleNumber(5)); // Output: 10
                     and event
                     handling, you should now have a solid foundation in JavaScript programming.</p>
             </div>
+            <div class="topic-details">
+                <div class="JuniorDev subtopic">
+                    <h3>Rookie Devs should Focus on these Topics</h3>
+                    <h4>String manipulation: </h4>
+                </p>This refers to the ability to manipulate strings in programming, which includes tasks such as
+                    searching for substrings, replacing characters, converting case, and splitting/joining strings.
+                    
+                    <h3>Some subtopics of string manipulation include:</h3>
+                    
+                    Searching for a substring
+                    Replacing characters
+                    Converting case (e.g. uppercasing or lowercasing a string)
+                    Splitting and joining strings
+                    Formatting strings (e.g. using placeholders or templates)
+                    Regular expressions (used to search for patterns in strings)
+                    Array manipulation: This refers to the ability to manipulate arrays in programming, which includes tasks such as
+                    adding/removing elements, sorting, filtering, and mapping over arrays.
+                    
+                    <h3>Some subtopics of array manipulation include:</h3>
+                    
+                    Adding and removing elements from an array
+                    Accessing array elements by index
+                    Iterating over arrays (e.g. using loops or higher-order functions)
+                    Sorting arrays
+                    Filtering arrays (e.g. returning a subset of elements that meet a certain condition)
+                    Mapping over arrays (e.g. transforming each element into a new value)
+                    Object/Data manipulation: This refers to the ability to manipulate objects and other data structures in programming,
+                    which includes tasks such as creating new objects, accessing properties, and modifying values.
+                    
+                    <h3>Some subtopics of object/data manipulation include:</h3>
+                    
+                    Creating new objects
+                    Accessing object properties by name or index
+                    Modifying object properties
+                    Combining or merging objects
+                    Serializing and deserializing data (e.g. converting between JSON and JavaScript objects)
+                    Working with other data structures such as sets, maps, and tuples.
+                    DOM manipulation: This refers to the ability to manipulate the Document Object Model (DOM) in web development, which
+                    includes tasks such as adding/removing elements, modifying styles, and handling user events.
+                    
+                    <h3>Some subtopics of DOM manipulation include:</h3>
+                    
+                    Accessing DOM elements by tag name, class name, or ID
+                    Modifying element attributes and styles
+                    Adding and removing elements from the DOM
+                    Handling user events (e.g. click, hover, submit)
+                    Traversing the DOM (e.g. finding parent or child elements)
+                    Animating DOM elements (e.g. using CSS transitions or JavaScript animations)</P>
         </section>
 
 
 
     </main>
 
-
+    <footer>
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/go.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        <script src="./src/JS/app.js"></script>
+    </footer>
 </body>
-<footer>
-    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
-    <!-- and it's easy to individually load additional languages -->
-    <script src="https://unpkg.com/@highlightjs/cdn-assets@11.7.0/languages/go.min.js"></script>
-    <script>hljs.highlightAll();</script>
-    <script src="./src/JS/app.js"></script>
-</footer>
+
 
 </html>
